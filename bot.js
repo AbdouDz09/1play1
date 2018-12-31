@@ -321,7 +321,7 @@ client.on('message', message => {
         .addField('1join', 'دخول رومك الصوتي')
         .addField('1disconnect', 'الخروج من رومك الصوتي')
         .addField('1skip', 'تخطي الأغنية')
-        .addField('dz!pause', 'ايقاف الاغنية مؤقتا')
+        .addField('2pause', 'ايقاف الاغنية مؤقتا')
         .addField('1resume', 'تكملة الاغنية')
         .addField('1queue', 'اظهار قائمة التشغيل')
         .addField('1np', 'اظهار الاغنية اللي انت مشغلها حاليا')
@@ -336,8 +336,8 @@ client.on('message', message => {
     if (message.content === '1ghelp') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
-        .addField('avatar', "افاتار الشخص المطلوب")
-        .addField('ping', 'معرفة ping البوت')
+        .addField('2avatar', "افاتار الشخص المطلوب")
+        .addField('2ping', 'معرفة ping البوت')
       message.channel.send(helpEmbed);
     }
 });
